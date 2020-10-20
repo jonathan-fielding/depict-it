@@ -33,7 +33,7 @@
                 statusElement.innerText = "Generating GIF to share...";
                 statusElement.append(loader);
 
-                const response = await fetch("/api/tweetGif", { method: "POST", body: JSON.stringify({ stack }) });
+                const response = await fetch("https://depictit.ably.dev/api/tweetGif", { method: "POST", body: JSON.stringify({ stack }) });
                 const responseBody = await response.json();
 
                 window.location = `https://twitter.com/intent/retweet?tweet_id=${responseBody.id_str}&related=DepictItGame`;

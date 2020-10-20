@@ -89,6 +89,7 @@
       <div class="game-lobby" v-if="gameCanBeStarted">
         <invite-link :game-id="gameId"></invite-link>
         <connected-players-summary :state="transmittedServerState"></connected-players-summary>
+        <game-modes :state="transmittedServerState"></game-modes>
         <ready-or-waiting-prompt :is-host="isHost" :state="transmittedServerState" v-on:startgame="startGame">
         </ready-or-waiting-prompt>
       </div>

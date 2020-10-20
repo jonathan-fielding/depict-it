@@ -24,7 +24,7 @@ export class DepictItClient {
   }
 
   async sendImage(base64EncodedImage) {
-    const result = await fetch("/api/storeImage", {
+    const result = await fetch("https://depictit.ably.dev/api/storeImage", {
       method: "POST",
       body: JSON.stringify({ gameId: this.gameId, imageData: base64EncodedImage })
     });

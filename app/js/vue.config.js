@@ -8,6 +8,7 @@ import { TimerBar } from "./components/TimerBar.js";
 
 import { ReadyOrWaitingPrompt } from "./components/ReadyOrWaitingPrompt.js";
 import { ConnectedPlayersSummary, SinglePlayerSummary } from "./components/ConnectedPlayersSummary.js";
+import { GameModes, GameMode } from './components/GameModes.js';
 import { CreateGameForm } from "./components/CreateGameForm.js";
 
 import { PlayfieldWaitForOthers } from "./components/PlayfieldWaitForOthers.js";
@@ -33,6 +34,8 @@ Vue.component('InviteLink', InviteLink);
 Vue.component('Loader', Loader);
 Vue.component('ReadyOrWaitingPrompt', ReadyOrWaitingPrompt);
 Vue.component('ConnectedPlayersSummary', ConnectedPlayersSummary);
+Vue.component('GameModes', GameModes);
+Vue.component('GameMode', GameMode);
 Vue.component('SinglePlayerSummary', SinglePlayerSummary);
 Vue.component('CreateGameForm', CreateGameForm);
 

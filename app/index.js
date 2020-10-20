@@ -1,6 +1,6 @@
 try {
   // Warm up the Serverless functions so subsequent calls are faster.
-  fetch("/api/init");
+  fetch("https://depictit.ably.dev/api/init");
 }
 catch { }
 

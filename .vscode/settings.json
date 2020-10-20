@@ -7,7 +7,7 @@
     "azureFunctions.preDeployTask": "npm prune",
     "liveServer.settings.proxy": {
       "enable": true,
-      "baseUri": "/api",
+      "baseUri": "https://depictit.ably.dev/api/",
       "proxyUri": "http://127.0.0.1:7071/api"
     },
     "extensions.ignoreRecommendations": true,

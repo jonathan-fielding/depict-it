@@ -291,6 +291,11 @@ button:hover,
   border: 5px solid black;
 }
 
+.palette div:hover {
+  box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+  cursor: pointer;
+}
+
 .image-frame {
   width: 100%;
   max-width: 400px;
@@ -754,4 +759,23 @@ button:hover,
 @keyframes flipInY {
   0% { transform: rotateY(0deg); }
   to { transform: rotateY(180deg); }
+}
+
+.game-modes {
+  display: flex;
+}
+
+.game-mode {
+  width: 150px;
+  height: 100px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background: #ccc;
+  margin-right: 20px;
+  padding: 20px;
+  color: black;
+}
+
+.game-mode.active {
+  background: white;
 }

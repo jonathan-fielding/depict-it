@@ -11,7 +11,7 @@
         "test": "jest --runInBand",
         "test:acceptance": "jest acceptance --runInBand",
         "dev:api": "npm run start --prefix api",
-        "dev:server": "npx live-server app --proxy=/api:http://127.0.0.1:7071/api",
+        "dev:server": "npx live-server app",
         "dev:server:test": "npx live-server app --proxy=/api:http://127.0.0.1:7071/api --no-browser --quiet",
         "acceptance": "run-p dev:server:test dev:api test:acceptance",
         "build:azure": "npm run copydeps"

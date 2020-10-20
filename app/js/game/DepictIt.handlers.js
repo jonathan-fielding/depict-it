@@ -15,6 +15,10 @@ export class StartHandler {
     }
 }
 
+export class SelectGameMode {
+    
+}
+
 export class DealHandler {
     async execute(state, context) {
         state.activePlayers = state.players.slice();
@@ -229,7 +233,7 @@ export class GetUserScoresHandler {
 
     generateGif(stack) {
         try {
-            fetch("/api/createGif", { method: "POST", body: JSON.stringify({ stack }) });
+            fetch("https://depictit.ably.dev/api/createGif", { method: "POST", body: JSON.stringify({ stack }) });
         } catch {
         }
     }
